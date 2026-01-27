@@ -34,6 +34,7 @@ sudo ./hackthenetwork.sh
 
 ### Output :-
 
+screenshots/image.png
 ![image.png](image.png)
 
 ### Port Scanning :
