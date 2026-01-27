@@ -34,7 +34,8 @@ sudo ./hackthenetwork.sh
 
 ### Output :-
 
-screenshots/image.png
+![ICMP network scan results](screenshots/02-recon/network-scan.png)
+
 ![image.png](image.png)
 
 ### Port Scanning :
