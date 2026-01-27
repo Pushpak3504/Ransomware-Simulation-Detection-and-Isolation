@@ -34,7 +34,7 @@ sudo ./hackthenetwork.sh
 
 ### Output :-
 
-![ICMP network scan results](screenshots/02-recon/network-scan.png)
+![ICMP network scan results](screenshots/image.png)
 
 ![image.png](image.png)
 
