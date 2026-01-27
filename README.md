@@ -44,8 +44,7 @@ sudo nmap -sS -sV -O 192.168.80.148
 
 ### Output :-
 
-![image.png](image%201.png)
-
+screenshots/image.png
 ![image.png](image%202.png)
 
 ```bash
